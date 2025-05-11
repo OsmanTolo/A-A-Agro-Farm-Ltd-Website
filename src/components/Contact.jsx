@@ -1,7 +1,8 @@
 // src/components/Contact.jsx
+// Contact Us section component with contact details and embedded map.
 import React from 'react'
 
-// SVG Icons for contact details (can be separate components if preferred)
+// SVG Icon components for contact details (can be further modularized if needed)
 const LocationIcon = () => (
     <svg
         className="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0"
@@ -49,11 +50,25 @@ const ClockIcon = () => (
 )
 
 function Contact() {
+    // Replace this with the actual iframe code from Google Maps
+    const googleMapsEmbedCode = `
+    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d19859.193603797077!2d-12.404508131308575!3d8.380622433702909!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjInNDkuNiJOIDEywrAyNCcyMS4yIlc!5e1!3m2!1sen!2suk!4v1746928722302!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  `
+    // IMPORTANT: The src URL above is a generic placeholder for Sierra Leone.
+    // You MUST replace it with the specific embed URL for A&A Agro Farm.
+
     return (
-        <section id="contact" className="py-16 md:py-24 bg-stone-100">
+        <section
+            id="contact"
+            className="py-16 md:py-24 bg-stone-100"
+            aria-labelledby="contact-heading"
+        >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <header className="text-center mb-12 md:mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 font-display">
+                    <h2
+                        id="contact-heading"
+                        className="text-3xl md:text-4xl font-bold text-emerald-700 font-display"
+                    >
                         Get In Touch With Us
                     </h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
@@ -61,13 +76,15 @@ function Contact() {
                         Farm in Sierra Leone.
                     </p>
                 </header>
+                {/* Grid layout for contact details and map */}
                 <div className="md:grid md:grid-cols-2 md:gap-12 items-start">
-                    {/* Contact Information & Message */}
+                    {/* Contact information and message block */}
                     <div className="space-y-8">
                         <div>
                             <h3 className="text-2xl font-semibold text-emerald-600 font-display mb-3">
                                 Contact Details
                             </h3>
+                            {/* Unordered list for contact items */}
                             <ul className="space-y-3 text-slate-700">
                                 <li className="flex items-start">
                                     <LocationIcon />
@@ -128,19 +145,23 @@ function Contact() {
                         </div>
                     </div>
 
-                    {/* Map Placeholder */}
+                    {/* Map Embed Block */}
                     <div className="mt-10 md:mt-0">
-                        <div className="aspect-w-16 aspect-h-9 rounded-lg shadow-xl overflow-hidden">
-                            <img
-                                src="https://placehold.co/600x400/CBD5E1/475569?text=Map+to+A%26A+Agro+Farm"
-                                alt="Map showing location of A&A Agro Farm in Sierra Leone"
-                                className="w-full h-full object-cover"
-                                loading="lazy"
-                            />
+                        {/* Aspect ratio container for the map iframe to maintain its shape */}
+                        {/* You might need to adjust aspect-h-9 or aspect-h-[...] based on your map's default aspect ratio or desired display */}
+                        <div className="aspect-w-16 aspect-h-9 rounded-lg shadow-xl overflow-hidden bg-slate-200">
+                            {/* The dangerouslySetInnerHTML prop is used here because Google Maps provides an iframe as a string.
+                Ensure the iframe code you get from Google Maps is trusted.
+              */}
+                            <div
+                                className="w-full h-full"
+                                dangerouslySetInnerHTML={{
+                                    __html: googleMapsEmbedCode,
+                                }}
+                            ></div>
                         </div>
                         <p className="text-sm text-slate-500 mt-2 text-center md:text-left">
-                            Note: This is a placeholder for a map. You can embed
-                            a Google Map here or use a static image.
+                            Find our farm location on the map above.
                         </p>
                     </div>
                 </div>
