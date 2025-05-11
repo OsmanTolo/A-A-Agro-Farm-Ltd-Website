@@ -5,7 +5,6 @@ import About from './components/About'
 import Products from './components/Products'
 import Impact from './components/Impact'
 import Gallery from './components/Gallery'
-// import DroneFootage from './components/DroneFootage'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import BackToTopButton from './components/BackToTopButton'
@@ -43,7 +42,6 @@ function App() {
                 <Products />
                 <Impact />
                 <Gallery />
-                {/* <DroneFootage /> */}
                 <Contact />
             </main>
             <Footer />
