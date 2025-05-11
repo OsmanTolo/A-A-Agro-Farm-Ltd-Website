@@ -1,5 +1,7 @@
 // src/components/Impact.jsx
 import React from 'react'
+import GalaWomenImage from '../assets/gala_women_dance.png'
+import GalaMenImage from '../assets/gala_men_football.png'
 
 function Impact() {
     return (
@@ -42,13 +44,13 @@ function Impact() {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <img
-                            src="https://placehold.co/500x350/22C55E/FFFFFF?text=Community+Engagement"
+                            src={GalaWomenImage}
                             alt="A&A Agro Farm team working with community members"
                             className="rounded-lg shadow-xl w-full h-auto object-cover"
                             loading="lazy"
                         />
                         <img
-                            src="https://placehold.co/500x350/10B981/FFFFFF?text=Sustainable+Practices"
+                            src={GalaMenImage}
                             alt="Sustainable farming practice like composting or intercropping at A&A Agro Farm"
                             className="rounded-lg shadow-xl w-full h-auto object-cover sm:mt-8"
                             loading="lazy"

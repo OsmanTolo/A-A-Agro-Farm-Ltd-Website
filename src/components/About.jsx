@@ -1,5 +1,6 @@
 // src/components/About.jsx
 import React from 'react'
+import BBForestryImage from '../assets/BB_forestry.png'
 
 function About() {
     return (
@@ -45,8 +46,8 @@ function About() {
                     {/* Image Placeholder */}
                     <div className="md:w-1/2 mt-10 md:mt-0">
                         <img
-                            src="https://placehold.co/600x450/A3E635/333333?text=Our+Farm+Heritage"
-                            alt="Scenic view of A&A Agro Farm or family members working"
+                            src={BBForestryImage}
+                            alt="Family member posing with a stick in her hand whilst touring the farm."
                             className="rounded-lg shadow-xl w-full h-auto object-cover"
                             loading="lazy"
                         />

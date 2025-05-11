@@ -1,11 +1,16 @@
 // src/components/Products.jsx
 import React from 'react'
+import SeasonalVegImage from '../assets/seasonal-veg.jpg'
+import CashewFruitsImage from '../assets/cashew_fruit.png'
+import PalmKernelImage from '../assets/palm-kernel.jpg'
+import ForestryImage from '../assets/infant_forestry_trees.png'
+import RiceImage from '../assets/rice-image.jpg'
 
 // Product data - can be moved to a separate file and imported if it grows larger
 const productsData = [
     {
         id: 1,
-        imgSrc: 'https://placehold.co/400x300/84CC16/FFFFFF?text=Vegetables',
+        imgSrc: SeasonalVegImage,
         altText: 'Fresh seasonal vegetables like cassava, yams, and peppers',
         name: 'Seasonal Vegetables',
         description:
@@ -14,31 +19,40 @@ const productsData = [
     },
     {
         id: 2,
-        imgSrc: 'https://placehold.co/400x300/F59E0B/FFFFFF?text=Tropical+Fruits',
-        altText: 'Juicy tropical fruits like mangoes, pineapples, and bananas',
-        name: 'Tropical Fruits',
+        imgSrc: CashewFruitsImage,
+        altText: 'Cashews growing on a tree',
+        name: 'Cashews',
         description:
-            'Our orchards yield delicious and nutritious tropical fruits such as mangoes, pineapples, bananas, and papayas, bursting with natural sweetness.',
-        availability: 'Seasonal, Check with us',
+            'Harvesting of our quality cashews has commenced. These carefully grown nuts are perfect for direct consumption and diverse culinary applications, reflecting our commitment to excellent produce.',
+        availability: 'Currently Harvesting',
     },
     {
         id: 3,
-        imgSrc: 'https://placehold.co/400x300/D97706/FFFFFF?text=Poultry+%26+Eggs',
-        altText: 'Free-range poultry and fresh eggs',
-        name: 'Free-Range Poultry & Eggs',
+        imgSrc: PalmKernelImage,
+        altText: 'Young palm trees planted in rows at A&A Agro Farm.',
+        name: 'Palm Trees (Palm Oil)',
         description:
-            'Our happy, free-range chickens provide high-quality meat and fresh, nutritious eggs. We prioritize animal welfare and natural rearing conditions.',
-        availability: 'Regular Supply',
+            'Our young palm plantation, established a few years ago, is currently maturing. We anticipate future harvests for palm kernels and oil, nurturing these trees for sustainable long-term yields.',
+        availability: 'Future Harvest',
     },
     {
         id: 4,
-        imgSrc: 'https://placehold.co/400x300/78350F/FFFFFF?text=Palm+Oil',
-        altText: 'Artisanal Palm Oil',
-        name: 'Artisanal Palm Oil',
+        imgSrc: ForestryImage,
+        altText:
+            'A managed forestry area at A&A Agro Farm, showing diverse tree species.',
+        name: 'Sustainable Forestry',
         description:
-            'Sustainably harvested and traditionally processed, our artisanal palm oil is a staple in Sierra Leonean cuisine, rich in flavor and nutrients.',
-        availability: 'Contact for bulk orders',
-        className: 'sm:col-span-2 lg:col-span-1', // Example of individual card spanning
+            'Our forestry initiatives focus on managing designated areas to enhance biodiversity and conserve local ecosystems. We are developing long-term plans for sustainable timber and non-timber forest products.',
+        availability: 'Long-term Development',
+    },
+    {
+        id: 5,
+        imgSrc: RiceImage,
+        altText: 'Land being prepared for rice cultivation at A&A Agro Farm.', // Update with specific alt text
+        name: 'Rice Cultivation',
+        description:
+            'We have recently begun preparing land for rice cultivation, a staple in Sierra Leone. This new venture aims to contribute to local food security with future harvests of quality rice.',
+        availability: 'Land Preparation Underway - Future Harvest',
     },
 ]
 
