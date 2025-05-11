@@ -20,26 +20,31 @@ function Impact() {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
                         <p>
-                            At A&A Agro Farm Limited, we believe that true
-                            success is shared. We actively work to empower local
-                            individuals and families by providing fair
-                            employment opportunities, skills training in
-                            sustainable agriculture, and by sourcing materials
-                            locally whenever possible.
+                            A&A Agro Farm empowers the local community by
+                            providing fair employment, agricultural training,
+                            and sourcing materials locally. We believe shared
+                            success uplifts everyone.
                         </p>
                         <p>
-                            Sustainability is not just a buzzword for us; it's a
-                            practice. We implement eco-friendly farming
-                            techniques such as crop rotation, natural pest
-                            control, and water conservation to minimize our
-                            environmental footprint and preserve the rich
-                            biodiversity of Sierra Leone for future generations.
+                            Our commitment to direct community development
+                            includes constructing a vital bridge, funded by
+                            family, relatives, friends, and volunteers. This
+                            bridge now ensures children's safe passage to
+                            school, especially during heavy rains.
                         </p>
                         <p>
-                            We are proud to contribute to local food security by
-                            making fresh, nutritious food accessible. A portion
-                            of our harvest often supports local schools and
-                            community initiatives.
+                            We further support our village by offering financial
+                            aid during hardships, contributing to the local
+                            mosque's construction, and fostering community
+                            spirit through events like last year's gala with
+                            sports and cultural competitions.
+                        </p>
+                        <p>
+                            Environmental sustainability is central to our
+                            operations. We use eco-friendly farming techniques
+                            like crop rotation and water conservation to
+                            minimize our footprint and preserve Sierra Leone's
+                            rich biodiversity.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
