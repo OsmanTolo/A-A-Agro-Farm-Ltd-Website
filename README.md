@@ -45,35 +45,6 @@ Example: `[View Live Site](https://your-aa-agro-farm-site.netlify.app)`
 - **Linting:** ESLint (configured with Vite plugin)
 - **Code Formatting:** (Consider adding Prettier if you set it up)
 
-## Project Structure
-
-The project follows a standard Vite + React structure:
-
-aa-agro-farm/
-├── public/ # Static assets (favicon.ico, images, index.html shell)
-├── src/
-│ ├── assets/ # (Optional) Local images, fonts, etc. imported by components
-│ ├── components/ # Reusable React components for each website section
-│ │ ├── Navbar.jsx
-│ │ ├── Hero.jsx
-│ │ ├── About.jsx
-│ │ ├── Products.jsx
-│ │ ├── Impact.jsx
-│ │ ├── Gallery.jsx
-│ │ ├── Contact.jsx
-│ │ ├── Footer.jsx
-│ │ └── BackToTopButton.jsx
-│ ├── App.jsx # Main application component, layout structure
-│ ├── index.css # Main CSS file with Tailwind directives and global styles
-│ └── main.jsx # Entry point for the React application
-├── .eslintrc.cjs # ESLint configuration
-├── .gitignore # Specifies intentionally untracked files that Git should ignore
-├── index.html # Main HTML template (Vite entry point in project root)
-├── package.json # Project metadata, dependencies, and scripts
-├── postcss.config.js # PostCSS configuration (for Tailwind CSS and Autoprefixer)
-├── tailwind.config.js # Tailwind CSS configuration
-└── README.md # This file
-
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
@@ -163,12 +134,6 @@ The website is a single scrolling page with the following sections, accessible v
 
 This website currently uses placeholder text and images throughout its sections (e.g., contact details, product descriptions, gallery images, map).
 
-**Action Required:**
-
-- **Replace all placeholder content** with actual information, high-quality images, and accurate details relevant to A&A Agro Farm Limited before final deployment.
-- Image placeholders are sourced from `https://placehold.co/`. Update `src` and `alt` attributes.
-- Text placeholders are generally enclosed in `[...]` or are generic descriptions.
-
 ## Deployment
 
 The production build of this website (generated in the `dist` folder via `npm run build`) consists of static files and can be deployed to various hosting platforms.
@@ -180,8 +145,6 @@ The production build of this website (generated in the `dist` folder via `npm ru
 - GitHub Pages
 - Cloudflare Pages
 - Firebase Hosting
-
-For detailed deployment instructions, please refer to the [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) document in this repository. _(Ensure this file exists or integrate key deployment steps here if preferred)._
 
 **Build Command:**
 
