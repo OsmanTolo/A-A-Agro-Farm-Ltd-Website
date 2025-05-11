@@ -7,7 +7,7 @@ const navLinksData = [
     { href: 'products', label: 'Our Products' },
     { href: 'impact', label: 'Our Impact' },
     { href: 'gallery', label: 'Gallery' },
-    { href: 'drone-footage', label: 'Drone Tour' }, // New link for Drone Footage
+    // { href: 'drone-footage', label: 'Drone Tour' },
     { href: 'contact', label: 'Contact Us' },
 ]
 
