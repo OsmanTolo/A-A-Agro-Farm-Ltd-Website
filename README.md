@@ -130,10 +130,6 @@ The website is a single scrolling page with the following sections, accessible v
 - **Semantic HTML & Basic Accessibility:** Structured for clarity with ARIA attributes where appropriate (e.g., `aria-label`, `aria-expanded`).
 - **Vite Powered:** Fast development server and optimized production builds.
 
-## Placeholder Content
-
-This website currently uses placeholder text and images throughout its sections (e.g., contact details, product descriptions, gallery images, map).
-
 ## Deployment
 
 The production build of this website (generated in the `dist` folder via `npm run build`) consists of static files and can be deployed to various hosting platforms.
