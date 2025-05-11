@@ -113,11 +113,11 @@ function Contact() {
                                     <span>
                                         <strong>Email:</strong>{' '}
                                         <a
-                                            href="mailto:info@aaagrofarm.sl"
+                                            href="mailto:dumbuyaabubakarr@yahoo.com"
                                             className="hover:text-amber-600"
                                             rel="noopener noreferrer"
                                         >
-                                            info@aaagrofarm.sl (Placeholder)
+                                            dumbuyaabubakarr@yahoo.com
                                         </a>
                                     </span>
                                 </li>

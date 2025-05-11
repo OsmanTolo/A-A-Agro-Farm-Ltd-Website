@@ -1,50 +1,55 @@
-// src/App.jsx
-import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Products from "./components/Products";
-import Impact from "./components/Impact";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import BackToTopButton from "./components/BackToTopButton";
+import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Products from './components/Products'
+import Impact from './components/Impact'
+import Gallery from './components/Gallery'
+import DroneFootage from './components/DroneFootage' // Import the new component
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import BackToTopButton from './components/BackToTopButton'
 
+// Main App component
 function App() {
-  // Helper function for smooth scrolling, considering fixed navbar
-  const smoothScrollTo = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      const navbar = document.querySelector("header"); // Assuming your navbar is a <header>
-      const navbarHeight = navbar ? navbar.offsetHeight : 64; // Default to 64px (h-16) if not found
+    // Smooth scroll utility function
+    const smoothScrollTo = (elementId) => {
+        const element = document.getElementById(elementId)
+        if (element) {
+            const navbar = document.querySelector('header.fixed')
+            const navbarHeight = navbar ? navbar.offsetHeight : 64
 
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - navbarHeight;
+            const elementPosition = element.getBoundingClientRect().top
+            const offsetPosition =
+                elementPosition + window.pageYOffset - navbarHeight
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth',
+            })
+        } else {
+            console.warn(
+                `Smooth scroll target element with ID '${elementId}' not found.`
+            )
+        }
     }
-  };
 
-  return (
-    <>
-      {/* Pass the scroll function to Navbar and Hero or any component needing it */}
-      <Navbar smoothScrollTo={smoothScrollTo} />
-      <main>
-        <Hero smoothScrollTo={smoothScrollTo} />
-        <About />
-        <Products />
-        <Impact />
-        <Gallery />
-        <Contact />
-      </main>
-      <Footer />
-      <BackToTopButton />
-    </>
-  );
+    return (
+        <>
+            <Navbar smoothScrollTo={smoothScrollTo} />
+            <main>
+                <Hero smoothScrollTo={smoothScrollTo} />
+                <About />
+                <Products />
+                <Impact />
+                <Gallery />
+                <DroneFootage /> {/* Add the new DroneFootage section here */}
+                <Contact />
+            </main>
+            <Footer />
+            <BackToTopButton />
+        </>
+    )
 }
 
-export default App;
+export default App
