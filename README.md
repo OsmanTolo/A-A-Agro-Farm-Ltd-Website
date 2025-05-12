@@ -1,7 +1,6 @@
 # A&A Agro Farm Limited - Website
 
 ![A&A Agro Farm Website Banner](https://github.com/OsmanTolo/A-A-Agro-Farm-Ltd-Website/blob/main/src/assets/hero-background-image.webp)
-_Replace the URL above with the raw GitHub URL to an image from your `src/assets/` folder. See instructions below._
 
 ## Overview
 
@@ -20,16 +19,13 @@ The site is built to be responsive and adaptive, ensuring a good user experience
 - [Environment Variables](#environment-variables)
 - [Website Sections](#website-sections)
 - [Key Features](#key-features)
-- [Placeholder Content](#placeholder-content)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Live Demo
 
-**(Optional: Add a link to the deployed website here if available)**
-Example: `[View Live Site](https://aaagrofarmltd.netlify.app/)`
+`[View Live Site](https://aaagrofarmltd.netlify.app/)`
 
 ## Tech Stack
 
@@ -62,8 +58,6 @@ Follow these instructions to get a copy of the project up and running on your lo
     git clone [https://github.com/](https://github.com/)<YOUR-USERNAME>/<REPO-NAME>.git
     cd <REPO-NAME>
     ```
-
-    _(Replace `<YOUR-USERNAME>/<REPO-NAME>` with the actual path to your repository. If you've just created the project locally and haven't pushed it to GitHub yet, you can skip this step and proceed from your existing project directory.)_
 
 2.  **Install dependencies:**
     Using npm:
@@ -114,8 +108,7 @@ The website is a single scrolling page with the following sections, accessible v
 3.  **Our Products:** Showcases the farm's produce and services using a card-based layout.
 4.  **Our Impact:** Highlights the farm's contribution to the local community and sustainability efforts.
 5.  **Gallery:** A visual showcase of life and activities at A&A Agro Farm.
-6.  **Drone Tour:** Features drone footage videos of the farm.
-7.  **Contact Us:** Provides contact details, an address (placeholder), operating hours, and an embedded map.
+6.  **Contact Us:** Provides contact details, an address (placeholder), operating hours, and an embedded map.
 
 ## Key Features
 
@@ -131,16 +124,6 @@ The website is a single scrolling page with the following sections, accessible v
 - **Vite Powered:** Fast development server and optimized production builds.
 - **Video Background & Embeds:** Demonstrates use of local video for hero background and embedded videos for drone footage.
 
-## Placeholder Content
-
-This website currently uses placeholder text and images throughout its sections (e.g., contact details, product descriptions, gallery images, map).
-
-**Action Required:**
-
-- **Replace all placeholder content** with actual information, high-quality images, and accurate details relevant to A&A Agro Farm Limited before final deployment.
-- Image placeholders are sourced from `https://placehold.co/`. Update `src` and `alt` attributes for images used _within the application_.
-- Text placeholders are generally enclosed in `[...]` or are generic descriptions.
-
 ## Deployment
 
 The production build of this website (generated in the `dist` folder via `npm run build`) consists of static files and can be deployed to various hosting platforms.
@@ -152,8 +135,6 @@ The production build of this website (generated in the `dist` folder via `npm ru
 - GitHub Pages
 - Cloudflare Pages
 - Firebase Hosting
-
-For detailed deployment instructions, please refer to the [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) document in this repository. _(Ensure this file exists or integrate key deployment steps here if preferred)._
 
 **Build Command:**
 
