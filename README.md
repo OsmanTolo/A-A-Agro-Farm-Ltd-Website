@@ -8,6 +8,8 @@ This repository contains the source code for the official website of A&A Agro Fa
 
 The site is built to be responsive and adaptive, ensuring a good user experience across various devices (desktop, tablet, mobile).
 
+[View Live Site](https://aaagrofarmltd.netlify.app/)
+
 ## Table of Contents
 
 - [Live Demo](#live-demo)
@@ -22,10 +24,6 @@ The site is built to be responsive and adaptive, ensuring a good user experience
 - [Deployment](#deployment)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
-
-## Live Demo
-
-`[View Live Site](https://aaagrofarmltd.netlify.app/)`
 
 ## Tech Stack
 
