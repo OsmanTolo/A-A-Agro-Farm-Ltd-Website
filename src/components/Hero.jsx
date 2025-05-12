@@ -1,6 +1,6 @@
 // src/components/Hero.jsx
 import React from 'react'
-import cashewTressDroneViewImage from '../assets/cashew_trees_drone_view.png'
+import heroBackgroundImage from '../assets/hero-background-image.webp'
 
 function Hero({ smoothScrollTo }) {
     const handleCTAClick = (e) => {
@@ -16,7 +16,7 @@ function Hero({ smoothScrollTo }) {
             id="home"
             className="relative pt-16 min-h-screen-minus-navbar flex items-center justify-center bg-cover bg-center text-white"
             style={{
-                backgroundImage: `url(${cashewTressDroneViewImage})`,
+                backgroundImage: `url(${heroBackgroundImage})`,
             }}
         >
             {/* Background Overlay for better text readability */}

@@ -3,7 +3,7 @@ import React from 'react'
 import SeasonalVegImage from '../assets/seasonal-veg.jpg'
 import CashewFruitsImage from '../assets/cashew_fruit.png'
 import PalmKernelImage from '../assets/palm-kernel.jpg'
-import ForestryImage from '../assets/infant_forestry_trees.png'
+import ForestryImage from '../assets/infant_forestry_trees.jpg'
 import RiceImage from '../assets/rice-image.jpg'
 
 // Product data - can be moved to a separate file and imported if it grows larger

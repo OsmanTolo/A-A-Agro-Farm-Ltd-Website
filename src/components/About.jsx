@@ -1,6 +1,6 @@
 // src/components/About.jsx
 import React from 'react'
-import BBForestryImage from '../assets/BB_forestry.png'
+import BBForestryImage from '../assets/BB_forestry.webp'
 
 function About() {
     return (
