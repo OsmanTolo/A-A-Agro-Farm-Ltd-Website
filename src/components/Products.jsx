@@ -6,7 +6,6 @@ import PalmKernelImage from '../assets/palm-kernel.jpg'
 import ForestryImage from '../assets/infant_forestry_trees.jpg'
 import RiceImage from '../assets/rice-image.jpg'
 
-// Product data - can be moved to a separate file and imported if it grows larger
 const productsData = [
     {
         id: 1,
