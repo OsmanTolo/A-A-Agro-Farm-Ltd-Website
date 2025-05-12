@@ -18,29 +18,36 @@ function About() {
                     {/* Text Content */}
                     <div className="md:w-1/2 space-y-6 text-slate-700 text-lg leading-relaxed">
                         <p>
-                            A&A Agro Farm Limited began as a humble family
-                            endeavor, born from a passion for the land and a
-                            dream to cultivate not just crops, but a thriving
-                            future for our community in Sierra Leone. For
-                            generations, our family has understood the rhythm of
-                            the seasons and the bounty that respectful farming
-                            can yield.
+                            The story of A&A Agro Farm Limited begins with Abu,
+                            a son of Robaang village, where our farm now
+                            flourishes. Though he moved to the UK in 2000, his
+                            heart remained tethered to the community that raised
+                            him. For years, he carried a dream: to one day
+                            return and make a significant contribution to his
+                            homeland.
                         </p>
                         <p>
-                            Our core values are woven into every aspect of our
-                            farm. We believe in hard work, integrity, and the
-                            profound connection between healthy land, healthy
-                            food, and healthy people. This philosophy guides our
-                            daily operations, from seed to harvest.
+                            In early 2016, this dream began to take shape. Abu
+                            envisioned a small farm, a seed of opportunity for
+                            Robaang. He shared this vision with his darling and
+                            supportive wife, Assanatu, and their family, who
+                            embraced it wholeheartedly. Journeying back to his
+                            village, Abu approached the chiefdom leaders to
+                            acquire land. In a testament to community spirit and
+                            shared hope, they generously offered acres,
+                            recognizing his deep connection to the chiefdom.
                         </p>
                         <p>
-                            We are deeply committed to sustainable and ethical
-                            farming practices. Our approach prioritizes soil
-                            health, water conservation, and biodiversity,
-                            ensuring that A&A Agro Farm contributes positively
-                            to Sierra Leone's environment and provides
-                            nourishing food for our local communities and
-                            beyond.
+                            From that pivotal moment, A&A Agro Farm – named in
+                            honor of Abu and Assanatu – was born. Fueled by the
+                            unwavering support of their children in the UK, Abu,
+                            Assanatu, and their loved ones began investing not
+                            just financially, but in every possible way to
+                            uplift the community and its people. Our farm is
+                            more than just land and crops; it's a promise kept,
+                            a legacy of giving back, and a commitment to
+                            sustainable, ethical practices that nurture both the
+                            earth and the community in Sierra Leone.
                         </p>
                     </div>
                     {/* Image Placeholder */}
