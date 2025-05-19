@@ -8,6 +8,8 @@ import Gallery from './components/Gallery'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import BackToTopButton from './components/BackToTopButton'
+import PhotoShowcase from './components/PhotoShowcase'
+import Team from './components/Team'
 
 // Main App component
 function App() {
@@ -39,9 +41,11 @@ function App() {
             <main>
                 <Hero smoothScrollTo={smoothScrollTo} />
                 <About />
+                <Team />
                 <Products />
                 <Impact />
                 <Gallery />
+                <PhotoShowcase />
                 <Contact />
             </main>
             <Footer />
