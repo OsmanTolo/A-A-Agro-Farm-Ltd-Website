@@ -89,9 +89,10 @@ function Contact() {
                                 <li className="flex items-start">
                                     <LocationIcon />
                                     <span>
-                                        <strong>Address:</strong> [Farm
-                                        Address], [Nearest Town/District],
-                                        Sierra Leone (Placeholder)
+                                        <strong>Address:</strong> A&A Agro Farm
+                                        Ltd., Robang Village, Tonkolili
+                                        District, Yoni Mabanta Chiefdom, Sierra
+                                        Leone.
                                     </span>
                                 </li>
                                 <li className="flex items-start">
@@ -103,8 +104,7 @@ function Contact() {
                                             className="hover:text-amber-600"
                                             rel="noopener noreferrer"
                                         >
-                                            +232 [Your Phone Number]
-                                            (Placeholder)
+                                            +232 75 147563
                                         </a>
                                     </span>
                                 </li>
@@ -126,7 +126,6 @@ function Contact() {
                                     <span>
                                         <strong>Operating Hours:</strong> Monday
                                         - Saturday, 8:00 AM - 5:00 PM
-                                        (Placeholder)
                                     </span>
                                 </li>
                             </ul>
