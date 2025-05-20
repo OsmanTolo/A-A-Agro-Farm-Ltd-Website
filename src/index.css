@@ -1,6 +1,22 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* Set smooth scrolling behavior on the html element for anchor links */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+@keyframes marqueeLeftToRight {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+@keyframes marqueeRightToLeft {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }

@@ -2,12 +2,9 @@
 // New component to display key staff members.
 import React from 'react'
 
-// 1. Import images for your team members from the assets folder
-// REPLACE these with your actual image paths and filenames
-import abuImage from '../assets/team-abu.jpg'
-import assanatuImage from '../assets/team-assanatu.jpg'
-import farmManagerImage from '../assets/team-farm-manager.jpg'
-// Add more imports as needed
+// Using placeholder images from the web (placehold.co) for team members
+// No local image imports needed for placeholders.
+// When you have actual images, you'll switch back to importing them from src/assets/
 
 const teamMembers = [
     {
@@ -15,24 +12,26 @@ const teamMembers = [
         name: 'Abu T. (Founder)',
         role: 'Visionary & Community Lead',
         bio: "Raised in Robaang village, Abu's lifelong dream was to give back to his community. He initiated A&A Agro Farm with a vision for sustainable development and local empowerment.",
-        imgSrc: abuImage,
-        altText: 'Photo of Abu T., Founder of A&A Agro Farm',
+        imgSrc: 'https://placehold.co/300x300/22C55E/FFFFFF?text=Abu+T.', // Placeholder image
+        altText: 'Placeholder photo of Abu T., Founder of A&A Agro Farm',
     },
     {
         id: 2,
         name: 'Assanatu K. (Co-Founder)',
         role: 'Operations & Family Support',
         bio: "Assanatu shares Abu's passion and has been instrumental in the farm's journey, providing unwavering support and contributing to the operational success and family-driven ethos.",
-        imgSrc: assanatuImage,
-        altText: 'Photo of Assanatu K., Co-Founder of A&A Agro Farm',
+        imgSrc: 'https://placehold.co/300x300/16A34A/FFFFFF?text=Assanatu+K.', // Placeholder image
+        altText:
+            'Placeholder photo of Assanatu K., Co-Founder of A&A Agro Farm',
     },
     {
         id: 3,
         name: '[Farm Manager Name]', // REPLACE
         role: 'Farm Operations Manager',
         bio: 'With extensive experience in [mention relevant experience], [Farm Manager Name] oversees the day-to-day operations, ensuring efficiency and sustainable practices on the ground.', // REPLACE
-        imgSrc: farmManagerImage, // REPLACE if you have a specific image
-        altText: 'Photo of [Farm Manager Name], Farm Operations Manager', // REPLACE
+        imgSrc: 'https://placehold.co/300x300/F59E0B/333333?text=Farm+Manager', // Placeholder image
+        altText:
+            'Placeholder photo of [Farm Manager Name], Farm Operations Manager', // REPLACE
     },
     // Add more team members here following the same structure
     // {
@@ -40,8 +39,8 @@ const teamMembers = [
     //   name: "[Another Staff Name]",
     //   role: "Key Role",
     //   bio: "Brief description of their role and contribution.",
-    //   imgSrc: anotherStaffImage, // Import this image
-    //   altText: "Photo of [Another Staff Name]",
+    //   imgSrc: "https://placehold.co/300x300/D97706/FFFFFF?text=Staff+Member", // Placeholder image
+    //   altText: "Placeholder photo of [Another Staff Name]",
     // },
 ]
 
@@ -77,6 +76,7 @@ function Team() {
                                 src={member.imgSrc}
                                 alt={member.altText}
                                 className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-4 shadow-md border-4 border-emerald-200"
+                                loading="lazy" // Added lazy loading
                             />
                             <h3 className="text-xl font-semibold font-display text-emerald-600 mb-1">
                                 {member.name}

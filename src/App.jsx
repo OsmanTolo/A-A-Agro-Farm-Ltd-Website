@@ -4,12 +4,11 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Products from './components/Products'
 import Impact from './components/Impact'
-import Gallery from './components/Gallery'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import BackToTopButton from './components/BackToTopButton'
-import PhotoShowcase from './components/PhotoShowcase'
 import Team from './components/Team'
+import FarmHighlights from './components/FarmHighlights'
 
 // Main App component
 function App() {
@@ -44,8 +43,7 @@ function App() {
                 <Team />
                 <Products />
                 <Impact />
-                <Gallery />
-                <PhotoShowcase />
+                <FarmHighlights />
                 <Contact />
             </main>
             <Footer />

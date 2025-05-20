@@ -6,7 +6,7 @@ const navLinksData = [
     { href: 'about', label: 'About Us' },
     { href: 'products', label: 'Our Products' },
     { href: 'impact', label: 'Our Impact' },
-    { href: 'gallery', label: 'Gallery' },
+    { href: 'farm-highlights', label: 'Highlights' },
     { href: 'contact', label: 'Contact Us' },
 ]
 

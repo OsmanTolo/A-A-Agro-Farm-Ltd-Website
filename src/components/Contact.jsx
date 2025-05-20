@@ -90,8 +90,8 @@ function Contact() {
                                     <LocationIcon />
                                     <span>
                                         <strong>Address:</strong> A&A Agro Farm
-                                        Ltd., Robang Village, Tonkolili
-                                        District, Yoni Mabanta Chiefdom, Sierra
+                                        Ltd., Robang Village, Yoni Mabanta
+                                        Chiefdom, Tonkolili District, Sierra
                                         Leone.
                                     </span>
                                 </li>
