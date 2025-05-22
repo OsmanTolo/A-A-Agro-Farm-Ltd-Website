@@ -52,7 +52,7 @@ const ClockIcon = () => (
 function Contact() {
     // Replace this with the actual iframe code from Google Maps
     const googleMapsEmbedCode = `
-    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d19859.193603797077!2d-12.404508131308575!3d8.380622433702909!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjInNDkuNiJOIDEywrAyNCcyMS4yIlc!5e1!3m2!1sen!2suk!4v1746928722302!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d19859.193603797077!2d-12.404508131308575!3d8.380622433702909!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjInNDkuNiJOIDEywrAyNCcyMS4yIlc!5e1!3m2!1sen!2suk!4v1746928722302!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of A&A Agro Farm Limited (Example Map)"></iframe>
   `
     // IMPORTANT: The src URL above is a generic placeholder for Sierra Leone.
     // You MUST replace it with the specific embed URL for A&A Agro Farm.
@@ -147,8 +147,8 @@ function Contact() {
                     {/* Map Embed Block */}
                     <div className="mt-10 md:mt-0">
                         {/* Aspect ratio container for the map iframe to maintain its shape */}
-                        {/* You might need to adjust aspect-h-9 or aspect-h-[...] based on your map's default aspect ratio or desired display */}
-                        <div className="aspect-w-16 aspect-h-9 rounded-lg shadow-xl overflow-hidden bg-slate-200">
+                        {/* Added w-full to ensure it takes the full width of its parent column */}
+                        <div className="w-full aspect-w-16 aspect-h-9 rounded-lg shadow-xl overflow-hidden bg-slate-200">
                             {/* The dangerouslySetInnerHTML prop is used here because Google Maps provides an iframe as a string.
                 Ensure the iframe code you get from Google Maps is trusted.
               */}

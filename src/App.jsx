@@ -43,7 +43,7 @@ function App() {
                 <Team />
                 <Products />
                 <Impact />
-                <FarmHighlights />
+                {/* <FarmHighlights /> */}
                 <Contact />
             </main>
             <Footer />

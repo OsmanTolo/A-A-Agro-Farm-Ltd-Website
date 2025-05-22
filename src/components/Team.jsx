@@ -1,23 +1,24 @@
 // src/components/Team.jsx
 // New component to display key staff members.
-import React from 'react'
-
-// Using placeholder images from the web (placehold.co) for team members
-// No local image imports needed for placeholders.
-// When you have actual images, you'll switch back to importing them from src/assets/
+import React, { useState } from 'react'
+import SulaimanKoromaImage from '../assets/sulaiman-koroma-photo.jpeg'
+import AbdulaiKoromaImage from '../assets/abdulai-koroma-photo.jpeg'
+import AdamsayThullahImage from '../assets/adamsay-thullah-photo.jpeg'
+import AbuSankohImage from '../assets/abu-sankoh-photo.jpeg'
+import AdamaSankohImage from '../assets/adama-sankoh-photo.jpeg'
 
 const teamMembers = [
     {
         id: 1,
-        name: 'Abu T. (Founder)',
-        role: 'Visionary & Community Lead',
+        name: 'Abu Dumbuya. (Founder)',
+        role: 'CEO',
         bio: "Raised in Robaang village, Abu's lifelong dream was to give back to his community. He initiated A&A Agro Farm with a vision for sustainable development and local empowerment.",
         imgSrc: 'https://placehold.co/300x300/22C55E/FFFFFF?text=Abu+T.', // Placeholder image
         altText: 'Placeholder photo of Abu T., Founder of A&A Agro Farm',
     },
     {
         id: 2,
-        name: 'Assanatu K. (Co-Founder)',
+        name: 'Assanatu Dumbuya. (Co-Founder)',
         role: 'Operations & Family Support',
         bio: "Assanatu shares Abu's passion and has been instrumental in the farm's journey, providing unwavering support and contributing to the operational success and family-driven ethos.",
         imgSrc: 'https://placehold.co/300x300/16A34A/FFFFFF?text=Assanatu+K.', // Placeholder image
@@ -26,25 +27,57 @@ const teamMembers = [
     },
     {
         id: 3,
-        name: '[Farm Manager Name]', // REPLACE
+        name: 'Sulaiman Koroma',
         role: 'Farm Operations Manager',
-        bio: 'With extensive experience in [mention relevant experience], [Farm Manager Name] oversees the day-to-day operations, ensuring efficiency and sustainable practices on the ground.', // REPLACE
-        imgSrc: 'https://placehold.co/300x300/F59E0B/333333?text=Farm+Manager', // Placeholder image
-        altText:
-            'Placeholder photo of [Farm Manager Name], Farm Operations Manager', // REPLACE
+        bio: 'With extensive experience in agro farming, Sulaiman oversees the day-to-day operations, ensuring efficiency and sustainable practices on the ground.',
+        imgSrc: SulaimanKoromaImage, // Placeholder image
+        altText: 'Photo of Sulaiman Koroma, Farm Operations Manager',
     },
-    // Add more team members here following the same structure
-    // {
-    //   id: 4,
-    //   name: "[Another Staff Name]",
-    //   role: "Key Role",
-    //   bio: "Brief description of their role and contribution.",
-    //   imgSrc: "https://placehold.co/300x300/D97706/FFFFFF?text=Staff+Member", // Placeholder image
-    //   altText: "Placeholder photo of [Another Staff Name]",
-    // },
+    {
+        id: 4,
+        name: 'Abdulai Koroma', // REPLACE
+        role: 'Farm Worker',
+        bio: 'A dedicated member of our team, Abdulai Koroma plays a vital role in the daily cultivation and maintenance tasks across our diverse crops.',
+        imgSrc: AbdulaiKoromaImage, // Placeholder image
+        altText: 'Placeholder photo of Abdulai Koroma, Farm Worker', // REPLACE
+    },
+    {
+        id: 5,
+        name: 'Adamsay Thullah', // REPLACE
+        role: 'Farm Worker',
+        bio: 'Adamsay Thullah brings skill and hard work to our fields, contributing to the successful growth and harvesting of our produce.',
+        imgSrc: AdamsayThullahImage, // Placeholder image
+        altText: 'Placeholder photo of Adamsay Thullah, Farm Worker', // REPLACE
+    },
+    {
+        id: 6,
+        name: 'Abu Sankoh', // REPLACE
+        role: 'Farm Worker',
+        bio: "Essential to our farm's operations, Abu Sankoh assists with various agricultural activities, from planting to tending our crops.",
+        imgSrc: AbuSankohImage, // Placeholder image
+        altText: 'Placeholder photo of Abu Sankoh, Farm Worker', // REPLACE
+    },
+    {
+        id: 7,
+        name: 'Adama Sankoh', // REPLACE
+        role: 'Farm Worker',
+        bio: 'With a strong work ethic, Adama Sankoh supports all aspects of farm work, ensuring our commitment to quality and sustainability is met.',
+        imgSrc: AdamaSankohImage, // Placeholder image
+        altText: 'Placeholder photo of Adama Sankoh, Farm Worker', // REPLACE
+    },
 ]
 
 function Team() {
+    const [showAllTeamMembers, setShowAllTeamMembers] = useState(false)
+
+    const toggleShowAll = () => {
+        setShowAllTeamMembers(!showAllTeamMembers)
+    }
+
+    const displayedMembers = showAllTeamMembers
+        ? teamMembers
+        : teamMembers.slice(0, 3)
+
     return (
         <section
             id="team"
@@ -67,7 +100,7 @@ function Team() {
 
                 {/* Grid for team members */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-                    {teamMembers.map((member) => (
+                    {displayedMembers.map((member) => (
                         <div
                             key={member.id}
                             className="bg-stone-50 rounded-xl shadow-lg overflow-hidden text-center p-6 flex flex-col items-center transform transition-all duration-300 hover:shadow-2xl hover:scale-105"
@@ -76,7 +109,7 @@ function Team() {
                                 src={member.imgSrc}
                                 alt={member.altText}
                                 className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-4 shadow-md border-4 border-emerald-200"
-                                loading="lazy" // Added lazy loading
+                                loading="lazy"
                             />
                             <h3 className="text-xl font-semibold font-display text-emerald-600 mb-1">
                                 {member.name}
@@ -90,6 +123,21 @@ function Team() {
                         </div>
                     ))}
                 </div>
+
+                {/* Toggle Button */}
+                {teamMembers.length > 3 && ( // Only show button if there are more than 3 members
+                    <div className="text-center mt-12">
+                        <button
+                            type="button"
+                            onClick={toggleShowAll}
+                            className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2"
+                        >
+                            {showAllTeamMembers
+                                ? 'Show Less'
+                                : 'Show All Team Members'}
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     )

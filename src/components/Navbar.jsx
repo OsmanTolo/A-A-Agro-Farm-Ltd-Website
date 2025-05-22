@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import farmLogo from '../assets/aa-logo.png'
 
 // Updated data for navigation links
 const navLinksData = [
@@ -27,15 +28,23 @@ function Navbar({ smoothScrollTo }) {
     return (
         <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50 h-16">
             <nav className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-full">
+                {/* Logo and Company Name */}
                 <a
                     href="#home"
                     onClick={(e) => {
                         e.preventDefault()
                         handleNavLinkClick('home')
                     }}
-                    className="text-xl font-bold text-emerald-700 font-display hover:text-emerald-600 transition-colors"
+                    className="flex items-center space-x-2 text-emerald-700 hover:text-emerald-600 transition-colors group"
                 >
-                    A&A Agro Farm Limited
+                    <img
+                        src={farmLogo}
+                        alt="A&A Agro Farm Ltd Logo"
+                        className="h-8 w-auto md:h-10 group-hover:opacity-80 transition-opacity" // Adjust height as needed
+                    />
+                    <span className="text-lg sm:text-xl font-bold font-display">
+                        A&A Agro Farm Limited
+                    </span>
                 </a>
 
                 <div className="hidden md:flex space-x-6 items-center">
