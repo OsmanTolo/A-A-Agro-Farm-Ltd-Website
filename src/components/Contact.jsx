@@ -52,10 +52,11 @@ const ClockIcon = () => (
 function Contact() {
     // Replace this with the actual iframe code from Google Maps
     const googleMapsEmbedCode = `
-    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d19859.193603797077!2d-12.404508131308575!3d8.380622433702909!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjInNDkuNiJOIDEywrAyNCcyMS4yIlc!5e1!3m2!1sen!2suk!4v1746928722302!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of A&A Agro Farm Limited (Example Map)"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d8296.89794902665!2d-12.403440303018636!3d8.38230432653199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjInNDkuNiJOIDEywrAyNCcyMS4yIlc!5e1!3m2!1sen!2suk!4v1747950438996!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of A&A Agro Farm Limited in Robaang, Sierra Leone"></iframe>
   `
-    // IMPORTANT: The src URL above is a generic placeholder for Sierra Leone.
-    // You MUST replace it with the specific embed URL for A&A Agro Farm.
+    //     const googleMapsEmbedCode = `
+    //     <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d19859.193603797077!2d-12.404508131308575!3d8.380622433702909!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjInNDkuNiJOIDEywrAyNCcyMS4yIlc!5e1!3m2!1sen!2suk!4v1746928722302!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of A&A Agro Farm Limited (Example Map)"></iframe>
+    //   `
 
     return (
         <section
@@ -145,19 +146,16 @@ function Contact() {
                     </div>
 
                     {/* Map Embed Block */}
-                    <div className="mt-10 md:mt-0">
-                        {/* Aspect ratio container for the map iframe to maintain its shape */}
-                        {/* Added w-full to ensure it takes the full width of its parent column */}
-                        <div className="w-full aspect-w-16 aspect-h-9 rounded-lg shadow-xl overflow-hidden bg-slate-200">
-                            {/* The dangerouslySetInnerHTML prop is used here because Google Maps provides an iframe as a string.
-                Ensure the iframe code you get from Google Maps is trusted.
-              */}
+                    <div className="mt-10 md:mt-0 w-full h-full min-h-[300px] md:min-h-[450px]">
+                        {' '}
+                        {/* Added min-height and ensured w-full, h-full */}
+                        <div className="w-full h-full rounded-lg shadow-xl overflow-hidden bg-slate-200">
                             <div
                                 className="w-full h-full"
                                 dangerouslySetInnerHTML={{
                                     __html: googleMapsEmbedCode,
                                 }}
-                            ></div>
+                            />
                         </div>
                         <p className="text-sm text-slate-500 mt-2 text-center md:text-left">
                             Find our farm location on the map above.
