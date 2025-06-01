@@ -3,6 +3,7 @@ import React from 'react'
 import GalaWomenImage from '../assets/gala_women_dance.png'
 import GalaMenImage from '../assets/gala_men_football.png'
 import BridgeImage from '../assets/bridge.jpeg'
+import MatchesSticksImage from '../assets/images/matches_sticks-image.jpeg'
 
 function Impact() {
     return (
@@ -79,7 +80,7 @@ function Impact() {
                         </div>
                         <div className="w-full">
                             <img
-                                src={BridgeImage}
+                                src={MatchesSticksImage}
                                 alt="Progress of the mosque construction in the village, supported by A&A Agro Farm."
                                 className="rounded-lg shadow-xl w-full h-auto object-cover aspect-[4/3]" // Added aspect ratio
                                 loading="lazy"

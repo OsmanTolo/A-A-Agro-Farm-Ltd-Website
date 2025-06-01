@@ -1,11 +1,13 @@
 // src/components/Team.jsx
 // New component to display key staff members.
 import React, { useState } from 'react'
-import SulaimanKoromaImage from '../assets/sulaiman-koroma-photo.jpeg'
-import AbdulaiKoromaImage from '../assets/abdulai-koroma-photo.jpeg'
-import AdamsayThullahImage from '../assets/adamsay-thullah-photo.jpeg'
-import AbuSankohImage from '../assets/abu-sankoh-photo.jpeg'
-import AdamaSankohImage from '../assets/adama-sankoh-photo.jpeg'
+import AbuImage from '../assets/images/abu-image.webp'
+import AssanatuImage from '../assets/images/assanatu_2-image.webp'
+import SulaimanKoromaImage from '../assets/images/sulaiman_koroma-image.webp'
+import AbdulaiKoromaImage from '../assets/images/abdulai_koroma-image.webp'
+import AdamsayThullahImage from '../assets/images/adamsay_thullah-image.webp'
+import AbuSankohImage from '../assets/images/abu_sankoh-image.webp'
+import AdamaSankohImage from '../assets/images/adama_sankoh-image.webp'
 
 const teamMembers = [
     {
@@ -13,7 +15,7 @@ const teamMembers = [
         name: 'Abu Dumbuya. (Founder)',
         role: 'CEO',
         bio: "Raised in Robaang village, Abu's lifelong dream was to give back to his community. He initiated A&A Agro Farm with a vision for sustainable development and local empowerment.",
-        imgSrc: 'https://placehold.co/300x300/22C55E/FFFFFF?text=Abu+T.', // Placeholder image
+        imgSrc: AbuImage,
         altText: 'Placeholder photo of Abu T., Founder of A&A Agro Farm',
     },
     {
@@ -21,7 +23,7 @@ const teamMembers = [
         name: 'Assanatu Dumbuya. (Co-Founder)',
         role: 'Operations & Family Support',
         bio: "Assanatu shares Abu's passion and has been instrumental in the farm's journey, providing unwavering support and contributing to the operational success and family-driven ethos.",
-        imgSrc: 'https://placehold.co/300x300/16A34A/FFFFFF?text=Assanatu+K.', // Placeholder image
+        imgSrc: AssanatuImage,
         altText:
             'Placeholder photo of Assanatu K., Co-Founder of A&A Agro Farm',
     },
